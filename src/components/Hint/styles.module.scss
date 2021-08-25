@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.hint {
+    font-size: $font-size-16;
+    color: $bilog-gray;
+    margin-top: 0.375em;
+    display: block;
+    text-align: left;
+
+    &--warning {
+      color: $bilog-red;
+    }
+}

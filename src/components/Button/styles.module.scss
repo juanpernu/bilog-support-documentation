@@ -1,0 +1,85 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+// Fonts
+$button-font-size: 18px;
+$button-font-size-base-value: 18;
+$button-font-size-small: 16px;
+
+// Spacings
+$button-padding: 0 25px;
+$button-icon-size: em(18, $button-font-size-base-value);
+
+$button-spacing-16-base: $bilog-spacing-16;
+$button-spacing-16-small: $bilog-spacing-16;
+$button-spacing-16-base: $bilog-spacing-16;
+$button-spacing-8-small: $bilog-spacing-8;
+
+// Shadows
+$bilog-button-raised: 0 7px 20px $bilog-shadow-raised;
+
+.button {
+  display: inline-block;
+  width: auto;
+  min-width: em(142, $button-font-size-base-value);
+  outline-width: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 40px;
+  font-weight: $fw-regular;
+  line-height: 1;
+  padding: $button-padding;
+  text-align: center;
+  border-radius: $bilog-border-radius-5;
+  transition: all 0.15s ease;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: $bilog-button-raised;
+  }
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: $button-icon-size;
+    max-height: $button-icon-size;
+  }
+
+  &.login-button {
+    margin-top: 20px;
+  }
+
+  &--filled {
+    background-color: $bilog-blue;
+    color: $bilog-white;
+    border: 1px solid $bilog-blue;
+  }
+
+  &--disabled {
+    background-color: $bilog-gray;
+    color: $bilog-white;
+    border: 1px solid $bilog-gray;
+    pointer-events: none;
+  }
+
+  &--full_width {
+    width: 100%;
+
+    & + & {
+      margin: $button-spacing-16-base 0 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
