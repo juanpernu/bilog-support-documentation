@@ -27,7 +27,7 @@ const TextField = ({
             disabled={disabled}
             className={styles["login-textbox"]}
             onChange={onChange ? onChangeHandler : valueChange}
-            placeholder={placeholder && placeholder}
+            placeholder={placeholder}
             type={password ? 'password' : 'text'}
             value={value ? value : textValue}
           />

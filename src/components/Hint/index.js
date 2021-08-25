@@ -2,10 +2,9 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
-const Hint = (props) => {
-  const { show, children, warning } = props;
-  const customClass = warning && "hint--warning";
-  if (show) return <span className={`${styles.hint, styles[customClass]}`}>{children}</span>;
+const Hint = ({ show, children, warning }) => {
+  const customClass = warning && styles["hint--warning"];
+  if (show) return <span className={`${styles.hint, customClass}`}>{children}</span>;
   return null;
 }
 

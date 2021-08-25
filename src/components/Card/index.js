@@ -3,8 +3,7 @@ import CardContent from './CardContent';
 
 import styles from './styles.module.scss';
 
-const Card = (props) => {
-  const { children } = props;
+const Card = ({ children }) => {
   return (
     <div className={`${styles["card"]} ${styles["center-card__body"]}`}>
       <CardContent>
