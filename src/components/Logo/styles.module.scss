@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.logo {
+  width: 150px;
+  margin: 60px auto 0;
+  display: block;
+  position: relative;
+  right: 7px;
+  top: 105px;
+  margin: 0 auto;
+  
+  @media screen and (max-width: $screen-mobile) {
+    top: 75px;
+  }
+}
