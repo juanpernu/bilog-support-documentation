@@ -1,5 +1,4 @@
-@import '../../styles/functions';
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 // Fonts
 $button-font-size: 18px;
@@ -8,7 +7,7 @@ $button-font-size-small: 16px;
 
 // Spacings
 $button-padding: 0 25px;
-$button-icon-size: em(18, $button-font-size-base-value);
+$button-icon-size: 1em;
 
 $button-spacing-16-base: $bilog-spacing-16;
 $button-spacing-16-small: $bilog-spacing-16;
@@ -21,7 +20,7 @@ $bilog-button-raised: 0 7px 20px $bilog-shadow-raised;
 .button {
   display: inline-block;
   width: auto;
-  min-width: em(142, $button-font-size-base-value);
+  min-width: 8em;
   outline-width: 0;
   font-size: 12px;
   text-transform: uppercase;
