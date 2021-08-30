@@ -15,7 +15,8 @@
     "docusaurus-plugin-sass": "^0.2.1",
     "node-sass": "^6.0.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "sass": "^1.38.2"
   },
   "browserslist": {
     "production": [
