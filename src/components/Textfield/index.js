@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import classNames from 'classnames';
+import React, { useState } from "react";
+import classNames from "classnames";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 const TextField = ({
   hint,
@@ -12,12 +12,12 @@ const TextField = ({
   disabled,
   refTarget,
 }) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const [focused, setFocused] = useState(false);
-  const onChangeHandler = evt => onChange(evt);
-  const valueChange = evt => setValue(evt.target.value);
+  const onChangeHandler = (evt) => onChange(evt);
+  const valueChange = (evt) => setValue(evt.target.value);
   const isFocused = () => setFocused(!focused);
-  const focusedClass = classNames(focused && 'focused');
+  const focusedClass = classNames(focused && "focused");
 
   return (
     <label onFocus={isFocused} onBlur={isFocused} ref={refTarget}>
@@ -28,14 +28,18 @@ const TextField = ({
             className={styles["login-textbox"]}
             onChange={onChange ? onChangeHandler : valueChange}
             placeholder={placeholder}
-            type={password ? 'password' : 'text'}
+            type={password ? "password" : "text"}
             value={value ? value : textValue}
           />
         </div>
       </div>
-      {hint && <span className={`${styles["textfield-hint"]} ${styles[focusedClass]}`}>{hint}</span>}
+      {hint && (
+        <span className={`${styles["textfield-hint"]} ${styles[focusedClass]}`}>
+          {hint}
+        </span>
+      )}
     </label>
   );
-}
+};
 
 export default TextField;
