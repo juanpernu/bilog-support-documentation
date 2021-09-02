@@ -58,10 +58,12 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-  const user = sessionStorage.getItem("userData");
 
   useEffect(() => {
-    if (!user) return (window.location = "/forbbiden");
+    if (window) {
+      const user = sessionStorage.getItem("userData");
+      if (!user) return (window.location = "/forbbiden");
+    }
   }, []);
 
   return (
