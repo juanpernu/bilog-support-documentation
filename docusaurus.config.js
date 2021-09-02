@@ -12,6 +12,8 @@ module.exports = {
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
+        href: "/home",
+        target: "_self",
       },
       items: [
         {
