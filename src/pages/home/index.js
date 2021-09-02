@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -58,6 +58,14 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
+  useEffect(() => {
+    if (window) {
+      const user = sessionStorage.getItem("userData");
+      if (!user) return (window.location = "/forbbiden");
+    }
+  }, []);
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
