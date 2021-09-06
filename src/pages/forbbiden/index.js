@@ -1,15 +1,20 @@
 import React from "react";
+import Logo from "../../components/Logo";
 
 import styles from "./styles.module.scss";
 
 function Forbbiden() {
   return (
-    <section>
-      <h2>No tienes los permisos necesarios para ver esta página</h2>
-      <p>
-        Si creés que esto es un error, enviá un mail a soporte@bilog.com.ar y
-        contanos tu caso.
-      </p>
+    <section className={styles["forbbiden-view"]}>
+      <div className={styles["wrap"]}>
+        <Logo />
+        <div className={styles["content"]}>
+          <h2 className={styles["content-title"]}>Ups! Pareciera que no tenés permisos.</h2>
+          <p className={styles["content-text"]}>
+            Por favor, ponete en contacto con el equipo de desarrollo web para solicitarlos.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
