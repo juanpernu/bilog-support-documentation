@@ -44,7 +44,7 @@ En la sección de [Atención de contacto a soporte](doc3.md) se detalla el proce
 
 ## Casos de soporte más comunes
 
-En este apartado dejamos un listado de los casos de soporte más comunes. En caso de que lo que necesites hacer no se encuentre en esta lista, mandá un mail a [soporte@bilog.com.ar](soporte@bilog.com.ar) con el asunto **_"Agregar caso de soporte a web"_ con una descripción detallada del caso** para que, luego, lo sumemos a esta lista.
+En este apartado dejamos un listado de los casos de soporte más comunes. En caso de que lo que necesites hacer no se encuentre en esta lista, mandá un mail a [soporte@bilog.com.ar](mailto:soporte@bilog.com.ar) con el asunto **_"Agregar caso de soporte a web"_ con una descripción detallada del caso** para que, luego, lo sumemos a esta lista.
 
 - [Instalación del Software de Gestión Odontológica](doc3#instalación-del-software-de-gestión-odontológica)
 - [Ruptura de base de datos](doc3#ruptura-de-la-base-de-datos)
