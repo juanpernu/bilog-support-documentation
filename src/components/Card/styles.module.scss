@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+@import "../../styles/functions";
+
+// Variables
+$card-border-radius: $bilog-border-radius-6;
+$card-shadow: 0 7px 20px $bilog-shadow;
+$card-raised-shadow: 0 10px 30px $bilog-shadow;
+$card-shadow-transition: box-shadow 0.2s ease-in-out;
+
+$card-width-desktop: em(340);
+$card-width-mobile: em(300);
+$card-margin-top-desktop: em(130);
+$card-margin-top-mobile: em(100);
+
+.card {
+  width: 300px;
+  padding: $bilog-spacing-32;
+  background-color: $bg-color-white;
+  box-shadow: $card-shadow;
+  transition: $card-shadow-transition;
+  border-radius: $card-border-radius;
+
+  &:hover {
+    box-shadow: $card-raised-shadow;
+  }
+
+  &.center-card__body {
+    width: $card-width-desktop;
+    margin: $card-margin-top-desktop auto 0;
+
+    @media screen and (max-width: $screen-mobile) {
+      width: $card-width-mobile;
+      margin: $card-margin-top-mobile auto 0;
+    }
+  }
+}
