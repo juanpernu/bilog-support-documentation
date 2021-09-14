@@ -8,8 +8,9 @@ $card-raised-shadow: 0 10px 30px $bilog-shadow;
 $card-shadow-transition: box-shadow 0.2s ease-in-out;
 
 $card-width-desktop: em(340);
+$card-width-tablet: em(400);
 $card-width-mobile: em(300);
-$card-margin-top-desktop: em(130);
+$card-margin-top-desktop: em(140);
 $card-margin-top-mobile: em(100);
 
 .card {
@@ -28,6 +29,12 @@ $card-margin-top-mobile: em(100);
     width: $card-width-desktop;
     margin: $card-margin-top-desktop auto 0;
 
+    // TABLET
+    @media (min-width: 768px) and (max-width: $screen-desktop) {
+      width: $card-width-tablet;
+    }
+
+    // MOBILE
     @media screen and (max-width: $screen-mobile) {
       width: $card-width-mobile;
       margin: $card-margin-top-mobile auto 0;

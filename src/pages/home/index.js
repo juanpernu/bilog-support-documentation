@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import Commons from "../../components/Commons";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
@@ -58,11 +59,14 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const [User, setUser] = useState({});
 
   useEffect(() => {
     if (window) {
-      const user = sessionStorage.getItem("userData");
+      let user = sessionStorage.getItem("userData");
       if (!user) return (window.location = "/forbbiden");
+      user = JSON.parse(user);
+      setUser(user);
     }
   }, []);
 
@@ -89,6 +93,9 @@ function Home() {
         </div>
       </header>
       <main>
+        {User.permits &&
+          <Commons permits={User.permits} />
+        }
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
