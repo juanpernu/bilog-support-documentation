@@ -59,7 +59,7 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-  const [User, setUser] = useState({});
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     if (window) {
@@ -93,8 +93,8 @@ function Home() {
         </div>
       </header>
       <main>
-        {User.permits &&
-          <Commons permits={User.permits} />
+        {user.permits &&
+          <Commons permits={user.permits} />
         }
         {features && features.length && (
           <section className={styles.features}>
