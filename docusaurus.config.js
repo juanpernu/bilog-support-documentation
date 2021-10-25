@@ -20,19 +20,6 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Soporte",
-          items: [
-            {
-              label: "Style Guide",
-              to: "docs/support/doc1",
-            },
-            {
-              label: "Second Doc",
-              to: "docs/support/doc2",
-            },
-          ],
-        },
-        {
           title: "Community",
           items: [
             {
