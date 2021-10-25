@@ -2,6 +2,7 @@
 id: doc1
 title: Primeros pasos
 sidebar_label: Primeros pasos
+slug: /support
 ---
 
 El objetivo de esta web es canalizar todo el material que necesitamos para la ejecución de un buen proceso de soporte para nuestros usuarios.
