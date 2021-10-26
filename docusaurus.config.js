@@ -8,44 +8,17 @@ module.exports = {
   projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "Bilog - Customer experience",
       logo: {
-        alt: "My Site Logo",
+        alt: "Bilog - CX",
         src: "img/logo.svg",
         href: "/home",
         target: "_self",
       },
-      items: [
-        {
-          to: "docs/doc1",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
-        },
-        { to: "blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
-        },
-      ],
     },
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Style Guide",
-              to: "docs/doc1",
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2",
-            },
-          ],
-        },
         {
           title: "Community",
           items: [
@@ -86,9 +59,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,

@@ -85,7 +85,6 @@ function Home() {
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/doc1")}
             >
               Get Started
             </Link>
@@ -93,9 +92,7 @@ function Home() {
         </div>
       </header>
       <main>
-        {user.permits &&
-          <Commons permits={user.permits} />
-        }
+        {user.permits && <Commons permits={user.permits} />}
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
